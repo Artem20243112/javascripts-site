@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <script>
+        /*let min=+prompt("Ведіть мінімальне число діапазону",)
+        let max=+prompt("Ведіть максимальне число діапазону",)
+        
+        for (let count = min; count <= max; count++){
+            
+    document.writeln()
+
+let sum = 0;
+while (true) {
+  let value = +prompt('Введіть число більше 100',100);
+  if (!value) break; 
+  sum += value;
+}
+alert( 'Сума: ' + sum );}*/
+let number;
+let sum=45;
+do {
+  number = prompt("Введіть число від 0 до 100?",0 );
+  if (number===null){
+	alert("До побачення!")
+}else if( sum==number ){
+    alert("Вгадав")
+}else if( sum>number){
+    alert("Замало")
+}else if(sum<number  ){
+    alert("Забагато")
+}
+ else{
+alert ("Ваше число: " + number)
+}
+} while (number !=number && sum!=null);
+
+
+
+
+    </script>
+</body>
+</html>

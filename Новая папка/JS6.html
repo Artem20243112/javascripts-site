@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <script>
+        /*let userLogin = prompt('Введіть ваш логін', '');
+if (userLogin == 'User') {
+  let userPass = prompt('Введіть ваш пароль', '');
+  if (userPass  == 'password')  {
+    alert( 'Ласкаво просимо!' );
+  } else if (userPass === null) { 
+    alert( 'Введення скасовано' );
+  } else {
+    alert( 'Пароль не вірний' );
+  }
+} else if (userLogin === null) { 
+  alert( 'Введення скасовано' );
+} else {
+  alert( 'Логін не вірний' );
+}
+let answer; 
+let inputN = prompt("Введіть число від 1 до 50","");
+let questN = prompt("Вгадайте число від 1 до 50","");
+if(+questN > +inputN){answer="Ваше число більше"};
+if(+questN < +inputN){answer="Ваше число менше"};
+if(+questN == +inputN){answer="Ви Вгадали!"}; 
+alert(answer);
+alert( true || true ); 
+alert( false || true );
+alert( true || false );
+alert( false || false );*/
+
+let money = +prompt('Яку суму хочете зняти (мінімальна купюра 50 грн.)','');
+if (money < 50 || money > 3000) {
+  alert('На жаль, Ви  можете зняти гроші на суму від 50 грн. до 3000 грн.');
+}else if(money%50==0){
+alert(`забирайте ваши ${money} грн` )
+}else{
+    alert(`у банкоматі відсутні такі купюри, тому ви можете забрати ${money-money%50} грн! А ${money%50} грн я заберу собі як комісію, тому що ви не вмієте рахувати!`)
+}
+/*let years = +prompt('Скільки вам років ?','');
+if (years > 18 && years < 100){
+  alert('Вам вхід заборонено')  
+}else{
+  alert("Ласкаво просимо")
+}*/
+    </script>
+</body>
+</html>

@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        body{
+            background-color: aquamarine;
+        }
+    </style>
+</head>
+<body>
+    <script>
+        /*let userName = 'ДокторХто';
+        function showHi(userName, userSay) {
+            if (userSay === undefined) {
+userSay = 'Хм…';
+}
+            
+            userName = userName + 'сказав: '
+            alert(userName + userSay)
+        }
+        showHi ('КапітанОчевидність', 'Привіт!');
+        showHi ('Микола', 'І тобі Привіт!');
+        alert('значення змінної('+ userName +') залишилося без змін!');
+        function max(x, y) {
+if (x > y) {
+  return x;
+} else {
+  return y;
+}
+}
+alert (max(1,3));
+alert (max(81,13));*/
+        let x=+prompt('Enter x',2)
+        let n=+prompt('Enter n',2)
+        let power=1;
+        for(let i=0;i<n;i++){
+            power=x*power;
+        }
+        alert(power)
+    </script>
+</body>
+</html>

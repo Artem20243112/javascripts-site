@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        body{
+            background-color: aqua;
+            font-size: 24px;
+        }
+    </style>
+</head>
+<body>
+    <script>
+        
+let number=+prompt("How many compliments do you want?",10);
+let compliments=["smart","clever","polite","kind","cute","sweet","pretty","good","friendly","kind-heared"];
+let animals=["dog","cat","shark","monkey","snake","rabbit","dolphin","jellyfish","turtle","parrot","bear","wolf","frog","panda","crocodile"];
+let colors = ["red","green","yellow","indigo","grey","pink","violet"];
+for(let i=1;i<=number;i++){
+let randomCompliments=Math.floor(Math.random()*compliments.length);
+let randomAnimals=Math.floor(Math.random()*animals.length);
+let randomColors=Math.floor(Math.random()*colors.length);
+document.write(`<p style='color:${colors[randomColors]}'>${i}) You are so ${compliments[randomCompliments]} as ${animals[randomAnimals]}! <br>`);
+    }
+    </script>
+</body>
+</html>

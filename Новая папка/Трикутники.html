@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+         
+        body { 
+           display: flex; 
+           justify-content: center; 
+           align-items: center; 
+           height: 100vh; 
+           margin: 0; 
+       } 
+   
+   </style>
+</head>
+<body>
+    <canvas id="myCanvas" width="700" height="700"
+style="border:1px solid #d3d3d3;">
+Your browser does not support the HTML5 canvas tag.</canvas>
+    <script>
+        let c = document.getElementById("myCanvas");
+    let cxt = c.getContext("2d");
+cxt.beginPath();
+cxt.moveTo(425,250); 
+cxt.lineTo(250,100); 
+cxt.lineTo(250,400); 
+cxt.fillStyle="red";
+cxt.fill();
+cxt.beginPath();
+cxt.moveTo(75,250); 
+cxt.lineTo(250,100); 
+cxt.lineTo(250,400); 
+cxt.fillStyle="red";
+cxt.fill();
+    </script>
+</body>
+</html>

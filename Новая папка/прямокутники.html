@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+         
+        body { 
+           display: flex; 
+           justify-content: center; 
+           align-items: center; 
+           height: 100vh; 
+           margin: 0; 
+       } 
+   
+   </style>
+</head>
+<body>
+<canvas id="myCanvas" width="700" height="700"
+style="border:1px solid #d3d3d3;">
+Your browser does not support the HTML5 canvas tag.</canvas>
+<script>
+/*let c = document.getElementById("myCanvas");
+let cxt = c.getContext("2d");
+cxt.fillStyle ="#ff0000";
+cxt.fillRect(0, 0, 75, 75); 
+let d = document.getElementById("myCanvas");
+let cxd = d.getContext("2d");
+cxd.fillStyle ="lightblue";
+cxd.fillRect(15, 15, 75, 75); 
+let f = document.getElementById("myCanvas");
+let cxf = f.getContext("2d");
+cxf.fillStyle ="green";
+cxf.fillRect(30, 30, 75, 75);
+let c = document.getElementById("myCanvas");
+let cxt = c.getContext("2d");
+cxt.strokeStyle = "red";
+cxt.fillStyle = "blue";
+cxt.lineWidth = 6;
+cxt.strokeRect(50, 40, 100, 100);
+cxt.fillRect(50, 40, 100, 100);
+let c = document.getElementById("myCanvas");
+let cxt = c.getContext("2d");
+cxt.strokeStyle = "purple";
+            cxt.setLineDash([15,5]);
+            cxt.strokeRect(40, 40, 100, 100);
+            cxt.strokeStyle = "green";
+            cxt.setLineDash([2,5,6]);
+            cxt.strokeRect(180, 40, 100, 100);
+            cxt.strokeStyle = "aquamarine";
+            cxt.setLineDash([4,2]);
+            cxt.strokeRect(320, 40, 100, 100);
+            cxt.strokeStyle = "yellow";
+            cxt.setLineDash([9,7]);
+            cxt.strokeRect(450, 40, 100, 100);*/
+            let c = document.getElementById("myCanvas");
+            let cxt = c.getContext("2d");
+            cxt.globalAlpha = 0.5;
+            cxt.strokeStyle = "red";
+            cxt.fillStyle = "blue";
+            cxt.lineWidth = 15;
+            cxt.lineJoin = "miter";
+            cxt.strokeRect(40, 40, 100, 100);
+            cxt.lineJoin = "bevel";
+            cxt.strokeRect(180, 40, 100, 100);
+            cxt.lineJoin = "round";
+            cxt.strokeRect(320, 40, 100, 100);
+</script>
+</body>
+</html>

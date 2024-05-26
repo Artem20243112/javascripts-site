@@ -1,0 +1,253 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <video src="video/182970 (540p).mp4" autoplay loop muted type="video/mp4"></video>
+    <style>
+    
+      body{
+    background-color: lightblue;
+  }
+  header{
+    background-color: yellow;
+    height: 250px;
+  }
+  nav,aside{
+    width: 20%;
+    float: left;
+  }
+  h2{
+    text-align: center;
+  }
+  main{
+    width: 60%;
+    background-color: lightcyan;
+    float: left;
+  }
+  footer{
+    height: 300px;
+    background-color: lightseagreen;
+    clear: both;
+  }
+  section{
+    margin: 20px;
+  }
+  article{
+    margin: 40px;
+    border: dashed 2px orange;
+    font-size: 24px;
+    text-align: center;
+    padding: 10px;
+  }
+  img{ 
+    width: 250px;
+    height: 350px;
+  }
+  
+  iframe{
+    margin: auto;
+    display: block;
+  }
+  .bgvideo{
+    height: 100%;
+    width: 100%;
+    position: relative;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+  .bgvideo video{
+    height: 100%;
+    width: 100%;
+    position: absolute;
+  top: 0;
+  left: 0;
+  object-fit: cover;
+  z-index: 1;
+  }
+  h1{
+    z-index: 2;
+    color: lightcyan;
+    font-size: 7vw;
+  }
+  a{
+    text-decoration: none;
+  }
+  /* CSS */
+  .button-64 {
+    align-items: center;
+    background-image: linear-gradient(144deg,#AF40FF, #5B42F3 50%,#00DDEB);
+    border: 0;
+    border-radius: 8px;
+    box-shadow: rgba(151, 65, 252, 0.2) 0 15px 30px -5px;
+    box-sizing: border-box;
+    color: #FFFFFF;
+    display: flex;
+    font-family: Phantomsans, sans-serif;
+    font-size: 20px;
+    justify-content: center;
+    line-height: 1em;
+    width: 80%;
+    padding: 3px;
+    text-decoration: none;
+    user-select: none;
+    -webkit-user-select: none;
+    touch-action: manipulation;
+    white-space: nowrap;
+    cursor: pointer;
+    margin: 30px;
+  }
+  
+  .button-64:active,
+  .button-64:hover {
+    outline: 0;
+  }
+  
+  .button-64 span {
+    background-color: rgb(5, 6, 45);
+    padding: 16px 24px;
+    border-radius: 6px;
+    width: 100%;
+    height: 100%;
+    transition: 300ms;
+  }
+  
+  .button-64:hover span {
+    background: none;
+  }
+  
+  @media (min-width: 768px) {
+    .button-64 {
+      font-size: 24px;
+      min-width: 196px;
+    }
+  }
+  /*SMB*/
+  .fa {
+    padding: 20px;
+    font-size: 30px;
+    width: 30px;
+    text-align: center;
+    text-decoration: none;
+    margin: 5px 2px;
+    border-radius: 50%;
+  }
+  
+  .fa:hover {
+      opacity: 0.7;
+  }
+  
+  .fa-facebook {
+    background: #3B5998;
+    color: white;
+  }
+  
+  .fa-twitter {
+    background: #55ACEE;
+    color: white;
+  }
+  
+  .fa-google {
+    background: #dd4b39;
+    color: white;
+  }
+  
+  .fa-linkedin {
+    background: #007bb5;
+    color: white;
+  }
+  
+  .fa-youtube {
+    background: #bb0000;
+    color: white;
+  }
+  
+  .fa-instagram {
+    background: #125688;
+    color: white;
+  }
+  .mapg{
+    width: 200px;
+    height: 200px;
+    float: right;
+    margin-right: 50px;
+  }
+  @media only screen and (max-width: 800px){
+    nav,main,aside{
+      width: 100%;
+    }
+  }
+    </style>
+    </head>
+    <body>
+    <header>
+    <div class="bgvideo">
+      <video src="video/182970 (540p).mp4" autoplay loop muted type="video/mp4"></video>
+      <h1>Сайт Артема</h1>
+    </div>
+    </header>
+    <nav>
+      <h2>Навігація</h2>
+    <a href="#aboutme">
+    <button class="button-64" role="button"><span class="text">About me</span></button></a>
+    <a href="#youtube">
+    <button class="button-64" role="button"><span class="text">Гімн</span></button></a>
+    <a href="#myvideo">
+    <button class="button-64" role="button"><span class="text">Моє відео</span></button></a>
+    <a href="#">
+    <button class="button-64" role="button"><span class="text">About me</span></button></a>
+    </nav>
+    <main>
+      <h2>Про мене</h2>
+      <section id="aboutme">
+        
+        <article>
+          Мене звати Артем. Мені дванадцять років. Навчаюсь в 6 класі. Я люблю розмовляти з другом. Також мені подобається мандрувати по різним країнам. Моє хобі грати в баскетбол. Я зараз живу в Полтаві. 	
+        </article>
+        
+      </section>
+      <section id="youtube">
+        <iframe width="450" height="203" src="https://www.youtube.com/embed/1VCQDoYop64" title="Державний Гімн України - National Anthem of Ukraine - Rock version by Nicky Rubchenko" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>
+      </section>
+      <section id="myvideo">
+        <video controls width="100%">
+          <source src="video/161578-823944365 (720p).mp4" type="video/mp4">
+        </video>
+      </section>
+    </main>
+    <aside>
+      <h2>Мої роботи</h2>
+      <a href="Банкомат.html" target="_blank">
+    <button class="button-64" role="button"><span class="text">Банкомат</span></button></a>
+    <a href="Вгадай число.html" target="_blank">
+    <button class="button-64" role="button"><span class="text">Вгадай число</span></button></a>
+    <a href="знаходження підрядка у рядку.html" target="_blank">
+    <button class="button-64" role="button"><span class="text">знаходження підрядка у рядку</span></button></a>
+    <a href="Квадратне рівняння.html" target="_blank">
+    <button class="button-64" role="button"><span class="text">Квадратне рівняння</span></button></a>
+    <a href="Кола.html" target="_blank">
+    <button class="button-64" role="button"><span class="text">Кола</span></button></a>
+    <a href="Компліменти.html" target="_blank">
+    <button class="button-64" role="button"><span class="text">Компліменти</span></button></a>
+    <a href="Периметр прямокутника.html" target="_blank">
+    <button class="button-64" role="button"><span class="text">Периметр прямокутника</span></button></a>
+    <a href="перший політ у космос.html" target="_blank">
+    <button class="button-64" role="button"><span class="text">перший політ у космос</span></button></a>
+    <a href="Планети.html" target="_blank">
+    <button class="button-64" role="button"><span class="text">Планети</span></button></a>
+    <a href="Площа трикутника.html" target="_blank">
+    <button class="button-64" role="button"><span class="text">Площа трикутника</span></button></a>
+    </aside>
+    <footer>
+      <h2>Мої контакти</h2>
+    <a href="#" class="fa fa-facebook"></a>
+    <a href="#" class="fa fa-twitter"></a>
+    <a href="#" class="fa fa-instagram"></a>
+    <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d791.8559172988802!2d34.5231037099645!3d49.56660507781846!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x40d82f3c887b8b27%3A0x5c2b4ac1de666b8c!2z0JLQtdCxINC00LjQt9Cw0LnQvSAi0KLQtdGF0L3QvtC70L7Qs9GW0Zcg0KHRgtCw0LvQvtCz0L4g0KDQvtC30LLQuNGC0LrRgyI!5e0!3m2!1suk!2sua!4v1702810063500!5m2!1suk!2sua" width="200" height="200" style="border:0; float: right; margin-right: 20px" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade;"></iframe>
+    </footer>
+</head>
+
+    
+</body>
+</html>

@@ -1,0 +1,100 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        body{
+            background-color: aquamarine;
+            display: flex; 
+           justify-content: center; 
+           align-items: center; 
+           height: 100vh; 
+           margin: 0;
+        }
+        /* CSS */
+button {
+  align-items: center;
+  background-image: linear-gradient(144deg,#AF40FF, #5B42F3 50%,#00DDEB);
+  border: 0;
+  border-radius: 8px;
+  box-shadow: rgba(151, 65, 252, 0.2) 0 15px 30px -5px;
+  box-sizing: border-box;
+  color: #FFFFFF;
+  display: flex;
+  font-family: Phantomsans, sans-serif;
+  font-size: 20px;
+  justify-content: center;
+  line-height: 1em;
+  width: 30%;
+  padding: 3px;
+  text-decoration: none;
+  user-select: none;
+  -webkit-user-select: none;
+  touch-action: manipulation;
+  white-space: nowrap;
+  cursor: pointer;
+  margin: 30px;
+}
+
+button:active,
+button:hover {
+  outline: 0;
+}
+
+button span {
+  background-color: rgb(51, 156, 59);
+  padding: 16px 24px;
+  border-radius: 6px;
+  width: 50%;
+  height: 50%;
+  transition: 300ms;
+}
+
+
+    </style>
+</head>
+<body>
+    <script>    
+        function grades(){
+        let grade = +document.grade_level.a.value;
+        let answer=document.getElementById("level")
+switch(grade){
+    case 12:
+    case 1:
+    case 2:
+        string='Зима';
+        break;
+    case 4:
+    case 5:
+    case 3:
+        string='Весна';
+        break;
+    case 7:
+    case 8:
+    case 6:
+        string='Літо';
+        break;
+    case 10:
+    case 11:
+    case 9:
+        string='Осінь';
+        break;
+default:
+    string='Такого місяця не існуєю'
+}
+answer.innerHTML = string;
+}
+    </script>
+    <div>
+        <h1>Введіть номер місяця</h1>
+        <form name="grade_level" action="javascript:grades()">
+            Введіть місяць:<input class="grade" name="a" type="text" value="" size="4"><br>
+            <button >Відповідь</button >
+            </form>
+        Цей місяць в таку пору року: 
+        <span id="level"></span>
+    </div>
+</body>
+</html>

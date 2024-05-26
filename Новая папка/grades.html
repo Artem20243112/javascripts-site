@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <script>
+        function grades(){
+        let grade = +document.grade_level.a.value;
+        let answer=document.getElementById("level")
+switch(grade){
+    case 1:
+    case 2:
+    case 3:
+        string='Початковий 😟';
+        break;
+    case 4:
+    case 5:
+    case 6:
+        string='Середній 😐';
+        break;
+    case 7:
+    case 8:
+    case 9:
+        string='Достатній 😊';
+        break;
+    case 10:
+    case 11:
+    case 12:
+        string='Високий 😃';
+        break;
+default:
+    string='Такої оцінки не існує.'
+}
+answer.innerHTML = string;
+}
+    
+    </script>
+</body>
+</html>

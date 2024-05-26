@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        body{
+            background-color: aquamarine;
+            color: black;
+        }
+        
+    </style>
+</head>
+<body>
+    <script>
+    
+    let min = +prompt("Введіть рамки діапазону","0")
+    let max = +prompt("Введіть рамки діапазону","100")
+ let count = 0
+ let sum = min+Math.floor(Math.random()*(max+1-min))
+ let num;
+  do {
+   num = prompt(`Вгадайте число від ${min} до ${max}`);
+  count++
+   if (num===null){
+	alert("До побачення!")
+ }else if (num < sum){
+ alert ("Замало")
+ }else if (num > sum) {
+     alert("Забагато")
+ }else if (num==sum){
+     alert(`Ви вгадали! Число = ${sum}. За ${count} спроб`)
+ }else{
+     alert("Ви ввели не число")
+ }
+ } while (num != sum && num!=null);
+ document.writeln(num)
+    </script>
+</body>
+</html>
